@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, violetmyt">
+    <meta name="keywords" content="Linux上机报告（2）, violetmyt">
     <meta name="description" content="��֤�ҵĽ���">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | violetmyt</title>
+    <title>Linux上机报告（2） | violetmyt</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/violetmyt/cdn/img/31.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">Linux上机报告（2）</h1>
                 </div>
             </div>
         </div>
@@ -429,12 +429,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/linux%E5%91%BD%E4%BB%A4/">
+                                <span class="chip bg-color">linux命令</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                                <span class="chip bg-color">笔记</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/linux/" class="post-category">
+                                linux
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -443,28 +460,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-03-26
+                    2021-04-10
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-03-26
+                    2021-04-13
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    75
+                    1.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    7 分
                 </div>
                 
 
@@ -487,19 +504,193 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new &quot;My New Post&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h1 id="Linux上机报告（2）"><a href="#Linux上机报告（2）" class="headerlink" title="Linux上机报告（2）"></a>Linux上机报告（2）</h1><h1 id="一．实训目的"><a href="#一．实训目的" class="headerlink" title="一．实训目的"></a>一．实训目的</h1><p>● 掌握vim命令的使用方法</p>
+<p>● 熟悉重定向及管道命令</p>
+<p>● 掌握文本处理。</p>
+<h1 id="二．项目背景"><a href="#二．项目背景" class="headerlink" title="二．项目背景"></a>二．项目背景</h1><p>现在有一台已经安装好Linux操作系统的主机，并且已经配置好基本的TCP/IP参数，能够通过网络连接局域网中或远程的主机。-台Linux服务器，能够提供FTP、Telnet和SSH连接。</p>
+<h1 id="三．实训内容"><a href="#三．实训内容" class="headerlink" title="三．实训内容"></a>三．实训内容</h1><p>1.重定向、管道</p>
+<p>(2)使用输出重定向，把ll命令在终端上显示的当前目录中的文件列表重定向到文件list中去。</p>
+<pre class="line-numbers language-none"><code class="language-none">ll &gt; list<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>(3)查看文件list中的内容，注意在列表中会多出一个文件list, 其长度为0。这说明Shell是首先创建了一个空文件，然后再运行ls命令。</p>
+<pre class="line-numbers language-none"><code class="language-none">cat list<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>(4)再次使用输出重定向，把ls命令在终端上显示的当前目录中的文件列表重定向到文件list中去。这次使用管道符号&gt;&gt;进行重定向。</p>
+<pre class="line-numbers language-none"><code class="language-none">ll &gt;&gt; list<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>(5)查看文件list的内容，注意其中两行list文件的信息中文件大小的区别。</p>
+<pre class="line-numbers language-none"><code class="language-none">cat list<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>(6)使用echo命令，在屏幕上显示内容为”happy”的字符串。</p>
+<pre class="line-numbers language-none"><code class="language-none">echo happy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(7)使用echo命令，将”happy”的字符串写入network文件中去。</p>
+<pre class="line-numbers language-none"><code class="language-none">echo happy &gt; network<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(8)将ls/etc/x1命令执行错误重定向到/home目录下的cw文件中。</p>
+<pre class="line-numbers language-none"><code class="language-none">[root@localhost violet]# ls&#x2F;etc&#x2F;x1 2&gt;&gt; &#x2F;home&#x2F;cw
+[root@localhost violet]# cat &#x2F;home&#x2F;cw
+bash: ls&#x2F;etc&#x2F;x1: 没有那个文件或目录  &#x2F;&#x2F;ls&#x2F;etc&#x2F;x1的执行结果<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>(9)使用cat命令将list文件和network文件合并成个文件 list_network.</p>
+<pre class="line-numbers language-none"><code class="language-none">cat list network &gt; list_notwork<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(13)利用管道和grep命令，在上面建立的文件list中查找字符串list.</p>
+<pre class="line-numbers language-none"><code class="language-none">cat list | grep &#39;list&#39;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>2.grep 及正则表达式</p>
+<p>(2)将/etc/passwd中有出现root的行取出来，同时显示这些行在/etc/passwd的行号。</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n root &#x2F;etc&#x2F;passwd<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(3)将/etc/passw没有出现root的行取出来。</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -vn root &#x2F;etc&#x2F;passwd<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>3.正则表达式</p>
+<p>实验文件准备。</p>
+<p>新建一个regular_express.txt。</p>
+<p>输入以下内容:</p>
+<p>a</p>
+<p>bcd</p>
+<p>1</p>
+<p>233</p>
+<p>abc123</p>
+<p>defrt456</p>
+<p>123abc</p>
+<p>12568teids</p>
+<p>abcfrt568</p>
+<p>“Open Source” is a good mechanism to develop programs.</p>
+<p>apple is my favorite food.</p>
+<p>Football game is not use feet only.</p>
+<p>this dress doesn’t fit me.</p>
+<p>However, this dress is about $ 3183 dollars.^M</p>
+<p>GNU is free air not free beer.^M</p>
+<p>Her hair is very beauty.^M</p>
+<p>I can’t finish the test.^M</p>
+<p>Oh! The soup taste good.^M</p>
+<p>motorcycle is cheap than car.</p>
+<p>This window is clear.</p>
+<p>the symbol ‘*’ is represented as start.</p>
+<p>Oh! My god!</p>
+<p>The gd software is a library for drafting programs.^M</p>
+<p>You are the best is mean you are the no. 1.</p>
+<p>The world <Happy> is the same with “glad”.</p>
+<p>I like dog.</p>
+<p>google is the best tools for search keyword.</p>
+<p>goooooogle yes!</p>
+<p>go! go! Let’s go.</p>
+<p># I am VBird</p>
+<p>保存退出。</p>
+<p>设置语系为C，代码: #export LANG=C.</p>
+<pre class="line-numbers language-none"><code class="language-none">locale 当前语系查看
+export LANG&#x3D;C
+或export原语系&#x3D;LANG&#x3D;C<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>新建regular_express.txt文件如下：</p>
+<p>修改语系为C：</p>
+<p>(1)^匹配行首。</p>
+<p>①查看以字符“a” 开头的行。</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;^a&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>②查看以字符串“abc”开头的行。</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;^abc&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(2) $ 匹配行尾。</p>
+<p>①查看以字符串“33” 开头的行。</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;^33&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>②查看以字符“3”开头的行。</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;^3&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(3) []:匹配[]内的字符或者关系。</p>
+<p>①查看包含字符“1”或者包含字符“2包含字符3”的行。</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;[123]&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>②查看包含字符test 或taste的行。</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;t[ae]st&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(4) 匹配任意的单字符。</p>
+<p>①查找任意字符开头，然后第二个字符为3。</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;^.3&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>②查找任意两个字符开头，然后第三个字符为3。</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;^..3&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(5)*:紧跟一个单字符，表示匹配0个或者多个此字符。</p>
+<p>下面例子的意思是，匹配字符“3”0次或者多次。</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;3*&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>下面例子的意思是，匹配字符串“23”,但是3被匹配的次数≥0.</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;23*&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(6) :用来屏蔽元字符的特殊含义。</p>
+<p>下面的例子的意思是，在字符串“365. 398”中，查找“.”这个字行，而不是任意单字符。</p>
+<pre class="line-numbers language-none"><code class="language-none">echo &quot;365.398&quot; | grep &#39;\.&#39;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(7)搜索到有oo的行，但不想要oo前面有g。</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;[^g]oo&#39; regular_express.txt                                    ^在[]内代表非，在[]外代表行首<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(8)搜寻包含特定字符串“the”的行。</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;the&#39; regular_express.txt <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(9)反向搜寻特定字符串“the” (即不包含“the”)。</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -vn &#39;the&#39; regular_express.txt <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(10)取得任意大小写“the” 的这个字符串</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -in &#39;the&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(11)搜索有oo的字符时，则可以使用。</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;oo&#39; regular_express.txt <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(12)搜索oo时不想搜到oo前面有g的话，可以利用反向选择[^]来达成</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;[^g]oo&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(13)搜索oo前面不想有小写字符</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;[^a-z]oo&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(14) 显示行首为“the” 的字符串</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;^the&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(15)显示行首是小写字符</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;^[a-z]&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(16)显示行尾为点的那一行</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;\.$&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(17)显示5~9行数据。</p>
+<pre class="line-numbers language-none"><code class="language-none">cat -n regular_express.txt | head -n 9 | tail -n 5<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(18)显示空白行</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;^$&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(19)找出g?? d字符串，起头g结束d的四个字符串。</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;g..d&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(20) o*代表空字符(就是有没有字符都可以)或者一个到N个o字符，所以</p>
+<p>grep -n ‘o*’regular_express.txt就会把所有行全部打印出来，</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;o*&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(21) oo* 代表o+空字符或者一个到N个o字符，所以grep- n’oo*’ regular_express.txt就会把o，oo，ooo等的行全部打印出来。</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;oo*&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(22)“goo*g” 代表gog, goog, gooog 等</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;goo*g&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(23)找出含g…g字符串的行</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;g.*g&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(24)找出含有数字的行</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;[0-9]*&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(25)找出含两个o的字符串</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;o\&#123;2\&#125;&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(26)找出g后含2~5个o然后以g结尾的字符串</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;go\&#123;2,5\&#125;g&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>(27)找出g后含2以上的o然后以g结尾的字符串</p>
+<pre class="line-numbers language-none"><code class="language-none">grep -n &#39;go\&#123;2,\&#125;g&#39; regular_express.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>2021年4月10日00:06:04</p>
 
                 
             </div>
@@ -526,7 +717,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://violetmyt.github.io/2021/03/26/hello-world/">https://violetmyt.github.io/2021/03/26/hello-world/</a>
+                    <a href="https://violetmyt.github.io/2021/04/10/Linux%E4%B8%8A%E6%9C%BA%E6%8A%A5%E5%91%8A%EF%BC%882%EF%BC%89/">https://violetmyt.github.io/2021/04/10/Linux%E4%B8%8A%E6%9C%BA%E6%8A%A5%E5%91%8A%EF%BC%882%EF%BC%89/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -563,7 +754,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/linux%E5%91%BD%E4%BB%A4/">
+                                    <span class="chip bg-color">linux命令</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                                    <span class="chip bg-color">笔记</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -732,7 +931,7 @@
         repo: 'violetmyt-gitalks',
         owner: 'violetmyt',
         admin: "violetmyt",
-        id: '2021-03-26T22-36-12',
+        id: '2021-04-10T00-00-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -758,28 +957,29 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/03/30/Linux%E4%B8%8A%E6%9C%BA%E6%8A%A5%E5%91%8A%EF%BC%881%EF%BC%89/">
+                <a href="/2021/04/10/Linux%E4%B8%8A%E6%9C%BA%E6%8A%A5%E5%91%8A%EF%BC%882%EF%BC%89/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/violetmyt/cdn/img/52.png" class="responsive-img" alt="Linux上机报告（1）">
+                        <img src="https://cdn.jsdelivr.net/gh/violetmyt/cdn/img/31.png" class="responsive-img" alt="Linux上机报告（2）">
                         
-                        <span class="card-title">Linux上机报告（1）</span>
+                        <span class="card-title">Linux上机报告（2）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Linux文件目录命令使用
+                            Linux文件重定向及管道命令及正则
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-30
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-10
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -792,6 +992,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -814,30 +1015,30 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/12/07/DVWA%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%85%8D%E7%BD%AE/">
+                <a href="/2021/03/30/Linux%E4%B8%8A%E6%9C%BA%E6%8A%A5%E5%91%8A%EF%BC%881%EF%BC%89/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/violetmyt/cdn/img/47.jpg" class="responsive-img" alt="DVWA环境搭建与配置">
+                        <img src="https://cdn.jsdelivr.net/gh/violetmyt/cdn/img/52.png" class="responsive-img" alt="Linux上机报告（1）">
                         
-                        <span class="card-title">DVWA环境搭建与配置</span>
+                        <span class="card-title">Linux上机报告（1）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            DVWA环境搭建与配置
+                            Linux文件目录命令使用
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-30
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" class="post-category">
-                                    网络安全
+                            <a href="/categories/linux/" class="post-category">
+                                    linux
                                 </a>
                             
                             
@@ -847,8 +1048,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/">
-                        <span class="chip bg-color">软件安装使用</span>
+                    <a href="/tags/linux%E5%91%BD%E4%BB%A4/">
+                        <span class="chip bg-color">linux命令</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
                     </a>
                     
                 </div>
