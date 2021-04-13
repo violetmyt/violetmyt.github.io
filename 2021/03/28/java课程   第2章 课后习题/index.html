@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="第2章至第5章, violetmyt">
+    <meta name="keywords" content="Java课程   第2章 课后习题, violetmyt">
     <meta name="description" content="��֤�ҵĽ���">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>第2章至第5章 | violetmyt</title>
+    <title>Java课程   第2章 课后习题 | violetmyt</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/violetmyt/cdn/img/8.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/violetmyt/cdn/img/41.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">第2章至第5章</h1>
+                    <h1 class="description center-align post-title">Java课程   第2章 课后习题</h1>
                 </div>
             </div>
         </div>
@@ -435,8 +435,8 @@
                                 <span class="chip bg-color">笔记</span>
                             </a>
                         
-                            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
-                                <span class="chip bg-color">数据库</span>
+                            <a href="/tags/java/">
+                                <span class="chip bg-color">java</span>
                             </a>
                         
                     </div>
@@ -447,8 +447,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
-                                数据库
+                            <a href="/categories/linux/" class="post-category">
+                                linux
                             </a>
                         
                     </div>
@@ -460,28 +460,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-11-22
+                    2021-03-28
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-11-22
+                    2021-04-13
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.7k
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    5 分
                 </div>
                 
 
@@ -504,61 +504,88 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="第2章-关系数据库"><a href="#第2章-关系数据库" class="headerlink" title="第2章  关系数据库"></a>第2章  关系数据库</h1><h2 id="2-1-关系模型"><a href="#2-1-关系模型" class="headerlink" title="2.1 关系模型"></a>2.1 关系模型</h2><h3 id="2-1-1关系数据结构"><a href="#2-1-1关系数据结构" class="headerlink" title="2.1.1关系数据结构"></a>2.1.1关系数据结构</h3><h4 id="1-关系"><a href="#1-关系" class="headerlink" title="1. 关系"></a>1. 关系</h4><p>1）域(Domain)<br><strong>域是一组具有相同数据类型的值的集合</strong></p>
-<p>2**.）笛卡尔积(Cartesian Product)**</p>
-<p><strong>3.）关系(Relation)</strong></p>
-<p> 笛卡尔积D1×D2×…×Dn的子集称为D1，D2，…，Dn上的关系，表示为<br>R(D1，D2，…，Dn)<br>这里的R表示关系的名称，n是关系的目或度(Degree)。当n=1时，称该关系为单元关系或一元关系。当n=2时，称该关系为二元关系。当n=m时，称该关系为m元关系</p>
-<h5 id="1）关系的元组、属性和候选码"><a href="#1）关系的元组、属性和候选码" class="headerlink" title="1）关系的元组、属性和候选码"></a>1）关系的元组、属性和候选码</h5><p><strong>关系是笛卡尔积的有限子集，所以关系也是一个二维表</strong>。<br>● <strong>元组(Tuple)</strong><br>表的每一行，对应一个元组。<br>● <strong>属性(Attribute)</strong><br>表的每一列，对应一个域，由于域可以相同，为了加以区分，必须对每一列起一个<strong>唯一的名字，称为属性</strong>。<br>● <strong>候选码(Candidate key)</strong><br>若关系中某一属性组的值能唯一地标识一个元组，则称该属性组为候选码。</p>
-<p>候选键码中的诸属性称为为<strong>主属性(Prime attribute)<strong>，不包含在任何候选码中的属性称为</strong>非主属性(Non-prime attribute)<strong>或</strong>非码属性((Non-key attribute)</strong></p>
-<p>● 主<strong>码（Primary key）</strong><br>在一个关系中有多个候选码，从中选定一个作为主码</p>
-<h5 id="（2）关系的类型"><a href="#（2）关系的类型" class="headerlink" title="（2）关系的类型"></a>（2）关系的类型</h5><p><strong>基本关系(又称基本表或基表)、查询表和视图表。</strong></p>
-<h5 id="（3）关系的性质"><a href="#（3）关系的性质" class="headerlink" title="（3）关系的性质"></a>（3）关系的性质</h5><p>● 列的同质性：每一列中的分量是同一类型的数据，来自同一个域。<br>● 列名唯一性：每一列具有不同的属性名，但不同列的值可以来自同一个域。<br>● 元组相异性：关系中任意两个元组的候选码不能相同。<br>● 行序的无关性：行的次序可以互换。<br>● 列序的无关性：列的次序可以互换。<br>● 分量原子性：分量值是原子的，即每一个分量都必须是不可分的数据项。</p>
-<p>（4）规范化(normalization)</p>
-<p>每一个分量必须是不可分的数据项。规范化的关系简称为范式(Normal Form)。</p>
-<h4 id="2-关系模式"><a href="#2-关系模式" class="headerlink" title="2. 关系模式"></a>2. 关系模式</h4><p>在关系数据库中，关系模式是型，关系是值。<br>关系是元组的集合，关系模式是对关系的描述</p>
-<p> 关系模式(Relation Schema)可以形式化地表示为<br>R(U, D, DOM, F)<br>其中：<strong>R是关系名，U是组成该关系的属性名集合，D是属性所来自的域，DOM是属性向域的映象集合，F是属性间的数据依赖关系集合</strong>。<br>关系模式通常可以简记为 R(U)   或   R(A1, A2, …, An)<br>其中，R是关系名，A1, A2, …, An 为属性名。</p>
-<h3 id="2-1-2-关系操作"><a href="#2-1-2-关系操作" class="headerlink" title="2.1.2 关系操作"></a>2.1.2 关系操作</h3><h4 id="1-基本的关系操作"><a href="#1-基本的关系操作" class="headerlink" title="1. 基本的关系操作"></a>1. 基本的关系操作</h4><p>**查询(Query)操作和插入(Insert)<strong>、</strong>删除(Delete)、修改(Update)**操作两大部分</p>
-<p><strong>查询操作是关系操作最重要的部分</strong>，可分为<strong>选择(Select)、投影(Project)、连接(Join)、除(Devide)、并(Union)、差(Except)、交(Intersection)、笛卡尔积</strong>等。其中的5种基本操作是<strong>并、差、笛卡尔积，选择、投影</strong></p>
-<p><strong>关系操作的特点是集合操作方式，即操作的对象与结果都是集合。</strong></p>
-<h4 id="2-关系操作语言"><a href="#2-关系操作语言" class="headerlink" title="2. 关系操作语言"></a>2. 关系操作语言</h4><p><strong>关系代数语言、关系演算语言和结构化查询语言</strong></p>
-<h3 id="2-1-3-关系的完整性Entity-Integrity"><a href="#2-1-3-关系的完整性Entity-Integrity" class="headerlink" title="2.1.3 关系的完整性Entity Integrity"></a>2.1.3 关系的完整性Entity Integrity</h3><p><strong>1.实体完整性规则</strong> 若属性(一个或一组属性) A是基本关系R的主属性，则<strong>A不能取空值</strong></p>
-<p><code>空值(null value)指”不知道”或”不存在”的值</code></p>
-<p><strong>2.参照完整性(Referential Integrity)</strong></p>
-<p>实体之间存在的联系</p>
-<p>一般用<strong>外码</strong>实现</p>
-<p><strong>参照完整性规则就是定义外码与主码之间的引用规则</strong></p>
-<p><strong>3. 用户定义完整性(User-defined Integrity)</strong></p>
-<p>限制数据库只接受符合完整性约束条件的数据值，不接受违反约束条件的数据</p>
-<p>（1）类型与长度限制。<br>（2）取值范围限制</p>
-<h2 id="2-2-关系代数"><a href="#2-2-关系代数" class="headerlink" title="2.2 关系代数"></a>2.2 关系代数</h2><p><strong>关系代数的运算对象是关系，运算结果也是关系</strong></p>
-<p>（1）传统的集合运算，如并、交、差、笛卡儿积</p>
-<p>2）专门的关系运算，如选择、投影、连接、除</p>
-<h1 id="第3章-关系数据库规范化理论"><a href="#第3章-关系数据库规范化理论" class="headerlink" title="第3章 关系数据库规范化理论"></a>第3章 关系数据库规范化理论</h1><h2 id="3-1-关系数据库设计理论"><a href="#3-1-关系数据库设计理论" class="headerlink" title="3.1 关系数据库设计理论"></a>3.1 关系数据库设计理论</h2><p>（1）数据冗余</p>
-<p>（2）插入异常</p>
-<p>（3）删除异常</p>
-<p>（4）修改异常</p>
-<p><strong>一个好的关系模式不是在任何情况下都是最优的</strong></p>
-<h2 id="3-2-规范化"><a href="#3-2-规范化" class="headerlink" title="3.2 规范化"></a>3.2 规范化</h2><p><strong>关系模式</strong>可以形式化地表示为一个五元组：<strong>R(U, D, DOM, F)<strong>，其中：</strong>R是关系名，U是组成该关系的属性名集合，D是属性所来自的域，DOM是属性向域的映象集合，F是属性间的数据依赖关系集合。</strong><br>由于D和DOM对设计好的关系模式作用不大，一般将关系模式简化为一个三元组：R&lt;U, F&gt;  ，有时还可简化为R(U)。</p>
-<h3 id="3-2-1-函数依赖、码和范式"><a href="#3-2-1-函数依赖、码和范式" class="headerlink" title="3.2.1 函数依赖、码和范式"></a>3.2.1 函数依赖、码和范式</h3><ol>
-<li><p>函数依赖<br>函数依赖是关系数据库规范化理论的基础</p>
-<p>2.码</p>
-</li>
-</ol>
-<p>主码和候选码都简称为码</p>
-<p>主码与外码提供了一个表示关系间的联系手段</p>
-<ol start="3">
-<li>范式<br>规范化的基本思想是<strong>尽量减小数据冗余</strong>，消除数据依赖中不合适的部分，解决插入异常、删除异常和更新异常等问题</li>
-</ol>
-<p>模式分解可以转换成若干个高一级范式的关系模式的集合，该过程称为规范化</p>
-<h1 id="第4章-数据库设计"><a href="#第4章-数据库设计" class="headerlink" title="第4章 数据库设计"></a>第4章 数据库设计</h1><p>数据库设计的基本步骤：</p>
-<p><strong>需求分析阶段，概念结构设计阶段，逻辑结构设计阶段，物理结构设计阶段，数据库实施阶段，数据库运行和维护阶段</strong></p>
-<p>需求分析中的结构化分析方法(Structured Analysis, SA)采用<strong>自顶向下、逐层分解的方法分析系统</strong>，通过<strong>数据流图</strong>(Data Flow Diagram, DFD)、<strong>数据字典</strong>(Data Dictionary, DD)描述系统。</p>
-<p>设计局部E-R模型：</p>
-<p>（1）属性应是系统中最小的信息单位。<br>（2）若属性具有多个值时，应该升级为实体。</p>
-<p><strong>1）一个实体转换为一个关系模式</strong></p>
-<p><strong>一个1:1联系可以转换为一个独立的关系模式，也可以与任意一端所对应的关系模式合并。</strong></p>
-<p><strong>一个1:n联系可以转换为一个独立的关系模式，也可以与n端所对应的关系模式合并。</strong></p>
-<h1 id="第5章-SQL-Server基础"><a href="#第5章-SQL-Server基础" class="headerlink" title="第5章 SQL Server基础"></a>第5章 SQL Server基础</h1><p>SQL Server2014服务器组件包括<strong>数据库引擎</strong>、<strong>分析服务</strong>、<strong>报表服务</strong>、<strong>集成服务</strong>等</p>
+                <h1 id="java课程-第2章-课后习题"><a href="#java课程-第2章-课后习题" class="headerlink" title="java课程   第2章 课后习题"></a>java课程   第2章 课后习题</h1><h2 id="一、填空题"><a href="#一、填空题" class="headerlink" title="一、填空题"></a>一、填空题</h2><p>1．Java程序代码必须放在一个类中，类使用________关键词定义。 class<br>2．Java中的注释有三类，分别是________、________和________。 </p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F;单行注释
+&#x2F;*  多行注释
+    多行注释*&#x2F;
+&#x2F;**
+文档注释
+*&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>3．在Java中，变量的数据类型分为两种，即基本________和________类型。   基本数据类型  引用数据类型<br>4．在逻辑运算符中，运算符________和________用于表示逻辑与，________表示逻辑或。 &amp;   &amp;&amp;    |<br>5．数组是一个________，存储到数组中的每个元素，都有自己的自动编号，最小值为________。  容器   0</p>
+<h2 id="二、判断题"><a href="#二、判断题" class="headerlink" title="二、判断题"></a>二、判断题</h2><p>1．Java语言不区分大小写。        </p>
+<p><code>错误  java严格区分大小写</code></p>
+<p>2．continue语句只用于循环语句中，它的作用是跳出循环。</p>
+<p><code>错误      跳出本次循环</code></p>
+<p>3．三元运算符的语法格式为“判断条件？表达式1：表达式2”。 正确<br>4．循环嵌套是指在一个循环语句的循环体中再定义一个循环语句的语法结构。while、do…while、for循环语句都可以进行嵌套，并且它们之间也可以互相嵌套。   正确<br>5．在switch条件语句和循环语句中都可以使用break语句。    正确</p>
+<h2 id="三、选择题"><a href="#三、选择题" class="headerlink" title="三、选择题"></a>三、选择题</h2><p>1．下列选项中，关于类的定义格式正确的是（AC ）（多选）<br>A、 修饰符 class 类名{<br>程序代码<br>}<br>B、修饰符 类名class {<br>程序代码<br>}<br>C、class 类名{<br>程序代码<br>}<br>D、类名 class {<br>程序代码<br>}</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">修饰符 class 类名&#123;
+程序代码
+&#125;   &#x2F;&#x2F;标准定义
+但修饰符可以不加
+不加修饰符的成员被称为 友好变量，是访问权限修饰词中的一种。
+JAVA里面一共有四种访问权限修饰词：
+什么都不加：被称为友好变量，也称作包访问权限，也就是说包内所有类都能访问
+private: 私有变量，只有当前类可以访问
+public: 公共变量，所有类都可以访问，无论是在相同的包中，还是不同的包中
+protected: 保护变量，继承访问权限，也就是说除了包中的类可以访问之外，其它的包中的继承该类的类可以访问该变量<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<p>2．下列选项中，那些属于合法的标识符？（A ）<br>A、 username<br>B、 class<br>C、 123username<br>D、 Hello World<br>3．下列选项中，使用比较运算符正确的是（D ）<br>A、 4！=3结果为false<br>B、 4==3 结果为false<br>C、 4&lt;=3结果为true<br>D、 4&gt;=3结果为true<br>4．请阅读下面代码。<br>int a=3；<br>int b=2；<br>switch (b){<br>case 1:<br>a–；<br>break;<br>case 2:<br>a++；<br>case 3:<br>a=a+3；<br>default:<br>a++;<br>break;<br>}<br>System.out.println(“a=”+a);<br>上述程序运行结束时，变量a的值为（D ）<br>A、4<br>B、5<br>C、7<br>D、8</p>
+<p><code>case穿透  在switch语句中，如果case控制的语句体后面不写break，将出现穿透现象，在不判断下一个case值的情况下，向下运行， 直到遇到break，或者整体switch语句结束</code></p>
+<p>5．假设int x=2,三元表达式x&gt;0？x+1：5（C ）<br>A、0<br>B、2<br>C、3<br>D、5</p>
+<h2 id="四、简答题"><a href="#四、简答题" class="headerlink" title="四、简答题"></a>四、简答题</h2><p>1．简述Java语言中的8中基本数据类型，并说明每种数据类型所占用的空间大小。</p>
+<p>整数 int默认</p>
+<p> byte (8)    short(16)    int(32)     long(64)</p>
+<p>浮点数  double默认</p>
+<p> float(32) double（64）</p>
+<p>字符 char (2)</p>
+<p>布尔 boolean(2)</p>
+<p>2．简述跳转语句break与continue的作用和区别。</p>
+<p>continue    用在循环中，基于条件控制，跳过某次循环体内容的执行，继续下一次的执行<br>break    用在循环中，基于条件控制，终止循环体内容的执行，也就是说结束当前的整个循环</p>
+<h2 id="五、编程题"><a href="#五、编程题" class="headerlink" title="五、编程题"></a>五、编程题</h2><p>1.请编写程序，实现计算“1+3+5+7+…+99”的值，要求如下。<br>（1）使用循环语句实现自然数1~99的遍历。<br>（2）在遍历过程中，通过条件判断当前遍历的书是否为奇数，如果是就累加，否则不加。</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class Xunhuanbianli &#123;
+    public static void main(String[] args) &#123;
+        int a;
+        int sum&#x3D;0;
+        for (a&#x3D;1;a&lt;&#x3D;99;a++)&#123;
+            if (a%2&#x3D;&#x3D;0)&#123;
+                continue;
+            &#125;
+             sum+&#x3D;a;
+        &#125;
+        System.out.println(&quot;1-99之间的奇数和为&quot;+sum);
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>2.请编写程序，实现获取数组{22，24，76，12，21，33}的最大数。</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class Arraymax &#123;
+    public static void main(String[] args) &#123;
+        &#x2F;&#x2F;定义数组
+        int[] arr &#x3D; &#123;22,24,76,12,33&#125;;
+
+        &#x2F;&#x2F;定义一个变量，用于保存最大值
+        &#x2F;&#x2F;取数组中第一个数据作为变量的初始值
+        int max &#x3D; arr[0];
+
+        &#x2F;&#x2F;与数组中剩余的数据逐个比对，每次比对将最大值保存到变量中
+        for(int x&#x3D;1; x&lt;arr.length; x++) &#123;
+            if(arr[x] &gt; max) &#123;
+                max &#x3D; arr[x];
+            &#125;
+        &#125;
+
+        &#x2F;&#x2F;循环结束后打印变量的值
+        System.out.println(&quot;max:&quot; + max);
+
+    &#125;
+
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>2021年3月28日22:38:58</p>
 
                 
             </div>
@@ -585,7 +612,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://violetmyt.github.io/2020/11/22/%E6%95%B0%E6%8D%AE%E5%BA%93%20%202-5/">https://violetmyt.github.io/2020/11/22/%E6%95%B0%E6%8D%AE%E5%BA%93%20%202-5/</a>
+                    <a href="https://violetmyt.github.io/2021/03/28/java%E8%AF%BE%E7%A8%8B%20%20%20%E7%AC%AC2%E7%AB%A0%20%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/">https://violetmyt.github.io/2021/03/28/java%E8%AF%BE%E7%A8%8B%20%20%20%E7%AC%AC2%E7%AB%A0%20%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -627,8 +654,8 @@
                                     <span class="chip bg-color">笔记</span>
                                 </a>
                             
-                                <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
-                                    <span class="chip bg-color">数据库</span>
+                                <a href="/tags/java/">
+                                    <span class="chip bg-color">java</span>
                                 </a>
                             
                         </div>
@@ -799,7 +826,7 @@
         repo: 'violetmyt-gitalks',
         owner: 'violetmyt',
         admin: "violetmyt",
-        id: '2020-11-22T00-00-00',
+        id: '2021-03-28T00-00-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -829,30 +856,30 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/11/29/%E7%AC%AC6%E7%AB%A0%20%20%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8C%E5%88%9B%E5%BB%BA%E8%A1%A8/">
+                <a href="/2021/03/30/Linux%E4%B8%8A%E6%9C%BA%E6%8A%A5%E5%91%8A%EF%BC%881%EF%BC%89/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/violetmyt/cdn/img/41.jpg" class="responsive-img" alt="第6章  创建数据库和创建表">
+                        <img src="https://cdn.jsdelivr.net/gh/violetmyt/cdn/img/52.png" class="responsive-img" alt="Linux上机报告（1）">
                         
-                        <span class="card-title">第6章  创建数据库和创建表</span>
+                        <span class="card-title">Linux上机报告（1）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            数据库课本复习 第6章  创建数据库和创建表
+                            Linux文件目录命令使用
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-11-29
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-30
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
-                                    数据库
+                            <a href="/categories/linux/" class="post-category">
+                                    linux
                                 </a>
                             
                             
@@ -862,12 +889,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
-                        <span class="chip bg-color">笔记</span>
+                    <a href="/tags/linux%E5%91%BD%E4%BB%A4/">
+                        <span class="chip bg-color">linux命令</span>
                     </a>
                     
-                    <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
-                        <span class="chip bg-color">数据库</span>
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
                     </a>
                     
                 </div>
@@ -881,47 +908,32 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/11/22/%E5%8D%83%E5%B3%B0%E7%BD%91%E5%AE%89%E5%85%A5%E9%97%A82019/">
+                <a href="/2021/03/26/hello-world/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/violetmyt/cdn/img/39.png" class="responsive-img" alt="千峰网安入门2019">
                         
-                        <span class="card-title">千峰网安入门2019</span>
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            千峰网安入门2019视频笔记
+                            
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-26
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" class="post-category">
-                                    网络安全
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            violet
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
-                        <span class="chip bg-color">笔记</span>
-                    </a>
-                    
-                    <a href="/tags/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/">
-                        <span class="chip bg-color">理论知识</span>
-                    </a>
-                    
                 </div>
                 
             </div>
