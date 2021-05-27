@@ -465,21 +465,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-04-22
+                    2021-05-24
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    820
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    6 分
                 </div>
                 
 
@@ -589,6 +589,81 @@ Tue, 13 Apr 2021 19:45:35 -0700
 <p>EDT - Eastern Daylight Time 东部夏令时间</p>
 <p> CDT - Central Daylight Time 中部夏令时间</p>
 <p>UTC：协调世界时，又称世界标准时间或世界协调时间，简称UTC，从英文“Coordinated Universal Time” 称为世界统一时间。</p>
+<p> 使用 tzselect 命令即可查看并选择已安装的时区文件</p>
+<pre class="line-numbers language-none"><code class="language-none">[root@localhost myt_4D]# ls -l /etc/localtime
+lrwxrwxrwx. 1 root root 41 4月  19 02:53 /etc/localtime -&gt; ../usr/share/zoneinfo/America/Los_Angeles
+[root@localhost myt_4D]# tzselect
+Please identify a location so that time zone rules can be set correctly.
+Please select a continent or ocean.
+ 1) Africa
+ 2) Americas
+ 3) Antarctica
+ 4) Arctic Ocean
+ 5) Asia
+ 6) Atlantic Ocean
+ 7) Australia
+ 8) Europe
+ 9) Indian Ocean
+10) Pacific Ocean
+11) none - I want to specify the time zone using the Posix TZ format.
+#? 5
+Please select a country.
+ 1) Afghanistan		  18) Israel		    35) Palestine
+ 2) Armenia		  19) Japan		    36) Philippines
+ 3) Azerbaijan		  20) Jordan		    37) Qatar
+ 4) Bahrain		  21) Kazakhstan	    38) Russia
+ 5) Bangladesh		  22) Korea (North)	    39) Saudi Arabia
+ 6) Bhutan		  23) Korea (South)	    40) Singapore
+ 7) Brunei		  24) Kuwait		    41) Sri Lanka
+ 8) Cambodia		  25) Kyrgyzstan	    42) Syria
+ 9) China		  26) Laos		    43) Taiwan
+10) Cyprus		  27) Lebanon		    44) Tajikistan
+11) East Timor		  28) Macau		    45) Thailand
+12) Georgia		  29) Malaysia		    46) Turkmenistan
+13) Hong Kong		  30) Mongolia		    47) United Arab Emirates
+14) India		  31) Myanmar (Burma)	    48) Uzbekistan
+15) Indonesia		  32) Nepal		    49) Vietnam
+16) Iran		  33) Oman		    50) Yemen
+17) Iraq		  34) Pakistan
+#? 9
+Please select one of the following time zone regions.
+1) Beijing Time
+2) Xinjiang Time
+#? 1
+
+The following information has been given:
+
+	China
+	Beijing Time
+
+Therefore TZ='Asia/Shanghai' will be used.
+Local time is now:	2021年 05月 24日 星期一 18:45:51 CST.
+Universal Time is now:	2021年 05月 24日 星期一 10:45:51 UTC.
+Is the above information OK?
+1) Yes
+2) No
+#? 1
+
+You can make this change permanent for yourself by appending the line
+	TZ='Asia/Shanghai'; export TZ
+to the file '.profile' in your home directory; then log out and log in again.
+
+Here is that TZ value again, this time on standard output so that you
+can use the /usr/bin/tzselect command in shell scripts:
+Asia/Shanghai
+[root@localhost myt_4D]# TZ='Asia/Shanghai'; export TZ
+[root@localhost myt_4D]# date
+2021年 05月 24日 星期一 18:48:22 CST
+[root@localhost myt_4D]# hwclock
+2021年05月24日 星期一 18时49分14秒  -0.795912 秒
+[root@localhost myt_4D]# hwclock -w 
+[root@localhost myt_4D]# date
+2021年 05月 24日 星期一 18:49:43 CST<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>更改Linux系统时区</p>
+<pre class="line-numbers language-none"><code class="language-none">sudo rm -f /etc/localtime
+sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
 
                 
             </div>
@@ -1079,7 +1154,7 @@ Tue, 13 Apr 2021 19:45:35 -0700
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">27k</span>&nbsp;字
+                class="white-color">31.4k</span>&nbsp;字
             
             
             
